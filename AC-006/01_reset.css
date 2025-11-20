@@ -1,0 +1,87 @@
+/*!
+ * 01_reset.css
+ * Propósito: Eliminar inconsistencias entre navegadores y crear una base uniforme.
+ * Autor: Hugo Expósito Torres (AC-006)
+ */
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 - asegurar comportamiento consistente */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figure,
+figcaption {
+  display: block;
+}
+
+/* Tipografía sin estilos por defecto */
+body {
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  background: transparent;
+}
+
+/* Listas sin estilos */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Enlaces sin decoración predeterminada */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imágenes y vídeos adaptables */
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Formularios sin estilos del navegador */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Accesibilidad: elemento oculto para lectores de pantalla */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
